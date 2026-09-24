@@ -1,8 +1,7 @@
 /* 
 =========================================================
 RELATÓRIO DE AUDITORIA (DESIGN PATTERN - SINGLETON)
-Auditores: [Nome do Aluno A] e [Nome do Aluno B]
-
+Auditores: Raphael Lombardi
 1. O que é um "Design Pattern" (Padrão de Projeto) e, especificamente, o que o padrão Singleton garante para a nossa aplicação?
 R: Um Design Pattern é uma solução genérica e reutilizável para um problema frequente no desenvolvimento de software. O padrão Singleton garante que uma classe possua uma ÚNICA instância em toda a memória da aplicação durante a execução, fornecendo um ponto de acesso centralizado. No nosso sistema, ele garante que todos os setores usem a mesma Torre de Controle, evitando autorizações duplicadas na mesma pista.
 
