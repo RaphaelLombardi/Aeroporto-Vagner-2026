@@ -1,6 +1,6 @@
 /* ==========================================================================
    RELATÓRIO DE AUDITORIA VIP
-   Auditores: [Nome do Aluno A] e [Nome do Aluno B]
+   Auditores: Raphael Lombardi
 
    1. Por que o código quebrou na linha do constructor do PassageiroVIP? O que faltava e para que serve?
    R: O código quebrou porque, ao utilizar Herança (extends), o construtor da classe filha é obrigado 
