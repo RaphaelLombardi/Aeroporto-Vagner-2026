@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Aeroporto Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>✈️ Torre de Controle - Aeroporto Inteligente</h1>
+
+    <div class="card">
+        <h2>Registrar Novo Voo</h2>
+        <input type="text" id="codigo" placeholder="Código (Ex: G3-100)">
+        <input type="text" id="origem" placeholder="Origem">
+        <input type="text" id="destino" placeholder="Destino">
+        <button id="btnRegistrar">Registrar Voo</button>
+        <p id="mensagemTela"></p>
+    </div>
+
+    <div class="card" id="painelVip">
+        <h2>Painel do Jato Executivo (VIP-001)</h2>
+        <p id="statusJato">Status: No Solo</p>
+        <p id="painelCombustivel">Combustível: 100%</p>
+        <button id="btnDecolar">Decolar</button>
+        <button id="btnSupersonico">Ativar Supersônico</button>
+        <button id="btnGastar">Gastar Combustível (Voar)</button>
+        <button id="btnAbastecerSeguro">Abastecer 10%</button>
+        <button id="btnPousar">Pousar</button>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
