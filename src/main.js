@@ -1,7 +1,20 @@
 import Aeroporto from './models/Aeroporto.js';
 import Voo from './models/Voo.js';
 import JatoExecutivo from './models/JatoExecutivo.js';
+import AgenteIoTService from './AgenteIoTService.js';
+import { renderizarTela } from './PainelView.js';
 
+// Simulando a leitura do disco para carregar os voos no sistema principal
+let frotaAtual = JSON.parse(localStorage.getItem("frota")) || [];
+
+// Preparando um voo fictício com tempo se ele não existir
+if (frotaAtual.length > 0 && frotaAtual[0].tempoParaDecolagem === undefined) {
+    frotaAtual[0].tempoParaDecolagem = 3; 
+}
+
+// Ligando o robô de varredura autônoma
+const agentePiloto = new AgenteIoTService(frotaAtual, renderizarTela);
+agentePiloto.iniciarMonitoramentoCorreto();
 // Inicializando o Aeroporto Principal
 const aeroportoCWB = new Aeroporto("Afonso Pena");
 

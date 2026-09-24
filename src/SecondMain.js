@@ -1,7 +1,7 @@
 /* 
 =========================================================
 RELATÓRIO DE AUDITORIA DE CLEAN CODE E SOLID
-Auditores: Raphael Lommbardi
+Auditores: Raphael Lombardi
 
 1. O que significa a sigla SRP (Single Responsibility Principle) e por que aplicamos ela hoje?
 R: SRP significa Princípio da Responsabilidade Única, que determina que uma classe ou arquivo deve ter apenas um motivo para mudar. Aplicamos ela hoje para eliminar a "God Class" (código espaguete), separando os dados, a interface e o acesso ao banco em arquivos diferentes, o que facilita a leitura e evita que a manutenção em uma área quebre outra.
